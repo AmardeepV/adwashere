@@ -1,0 +1,83 @@
+/* HALLSTATT BANNER FIX */
+
+#banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#banner:after {
+    z-index: 1;
+}
+
+#banner .inner {
+    position: relative;
+    z-index: 2;
+
+    /* override homepage transform */
+    transform: translateY(0px);
+}
+
+/* Optional: darker cinematic overlay */
+#banner:after {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* HALLSTATT BLOG */
+
+.ride-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    background: #2e3450;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.video-placeholder {
+    height: 450px;
+    border: 2px dashed rgba(255,255,255,0.3);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.03);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .video-container iframe {
+        height: 250px;
+    }
+}
