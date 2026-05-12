@@ -4011,3 +4011,51 @@ input, select, textarea {
         height: 180px;
     }
 }
+
+/* HALLSTATT BLOG */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+.ride-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    background: #2e3450;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.video-placeholder {
+    height: 450px;
+    border: 2px dashed rgba(255,255,255,0.3);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.03);
+}
