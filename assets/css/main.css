@@ -4014,24 +4014,6 @@ input, select, textarea {
 
 /* HALLSTATT BLOG */
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.02);
-}
-
 .ride-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
