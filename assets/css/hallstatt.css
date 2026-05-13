@@ -1,37 +1,4 @@
-/* HALLSTATT BANNER FIX */
 
-#banner {
-    position: relative;
-    overflow: hidden;
-}
-
-.banner-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-#banner:after {
-    z-index: 1;
-}
-
-#banner .inner {
-    position: relative;
-    z-index: 2;
-
-    /* override homepage transform */
-    transform: translateY(0px);
-}
-
-/* Optional: darker cinematic overlay */
-#banner:after {
-    background-color: rgba(0, 0, 0, 0.45);
-}
 
 /* HALLSTATT BLOG */
 
