@@ -1,13 +1,10 @@
 
 
 /* HALLSTATT BLOG */
-/* =========================
-   HALLSTATT BANNER
-========================= */
 
 #banner.major {
     position: relative;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 #banner.major .banner-img {
@@ -23,16 +20,6 @@
     object-position: center 65%;
 
     z-index: 0;
-}
-
-#banner.major:after {
-    background-color: rgba(0, 0, 0, 0.35);
-    z-index: 1;
-}
-
-#banner.major .inner {
-    position: relative;
-    z-index: 2;
 }
 
 .ride-stats {
