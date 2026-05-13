@@ -1,7 +1,19 @@
 
 
 /* HALLSTATT BLOG */
+#banner.major {
+    min-height: 80vh;
+    height: 80vh;
+    margin-bottom: 0;
+    top: 0;
+}
 
+#banner .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
 .ride-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
