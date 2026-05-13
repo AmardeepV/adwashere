@@ -22,6 +22,13 @@
     z-index: 0;
 }
 
+#banner.major:after {
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+
+
 .ride-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
