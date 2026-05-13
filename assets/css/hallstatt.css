@@ -1,39 +1,39 @@
 
 
 /* HALLSTATT BLOG */
-#banner {
+/* =========================
+   HALLSTATT BANNER
+========================= */
+
+#banner.major {
     position: relative;
     overflow: hidden;
 }
 
-.banner-img {
+#banner.major .banner-img {
     position: absolute;
+    inset: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
-    object-position: center center;
-    top: 0;
-    left: 0;
+
+    /* adjust crop position */
+    object-position: center 65%;
+
     z-index: 0;
 }
 
-#banner:after {
+#banner.major:after {
+    background-color: rgba(0, 0, 0, 0.35);
     z-index: 1;
 }
 
-#banner .inner {
+#banner.major .inner {
     position: relative;
     z-index: 2;
-
-    /* override homepage transform */
-    transform: translateY(0px);
 }
-
-/* Optional: darker cinematic overlay */
-#banner:after {
-    background-color: rgba(0, 0, 0, 0.45);
-}
-
 
 .ride-stats {
     display: grid;
