@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Bikes</title>
+  <base href="/adwashere/">
+  <title>My Bikes | AD WAS HERE</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/bikes.css">
 </head>
@@ -11,9 +13,11 @@
 <div id="wrapper">
 
     <!-- Header -->
-    <header id="header" class="alt">
+    <header id="header">
         <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="AD WAS HERE" /></a>
+            <img src="images/logo.png" alt="AD WAS HERE" />
+        </a>
+
         <nav>
             <a href="#menu">Menu</a>
         </nav>
@@ -33,43 +37,45 @@
     <!-- Main -->
     <div id="main">
 
-<section class="bikes-section">
-  <h1>My Bikes</h1>
+      <section>
+        <div class="inner bikes-section">
+            <header class="major">
+                <h1>My Bikes</h1>
+            </header>
+            <div class="bike-grid">
 
-  <div class="bike-grid">
+                <!-- Bike 1 -->
+                <div class="bike-card">
+                    <div class="bike-image">
+                        <img src="images/ninja.jpg" alt="Green Cheetah">
+                    </div>
+                    <h2>Green Cheetah</h2>
+                    <h3>Kawasaki Ninja 650 (2025)</h3>
+                    <p>
+                        Quick off the line and sharp through every corner,
+                        Green Cheetah perfectly matches my riding style.
+                        I ride it across Europe, where mountain passes
+                        and winding roads truly bring this bike to life.
+                    </p>
+                </div>
 
-    <!-- BIKE 1 -->
-    <div class="bike-card">
-      <div class="bike-image">
-        <img src="images/ninja.jpg" alt="Green Cheetah">
-      </div>
-      <h2>Green Cheetah</h2>
-      <h3>Kawasaki Ninja 650 (2025)</h3>
-      <p>
-        Quick off the line and sharp through every corner, Green Cheetah perfectly matches my riding style. 
-        I ride it across Europe, where the mountain passes and winding roads really bring this bike to life. 
-        It responds instantly, making every ride feel controlled yet thrilling. For me, 
-        it’s the perfect mix of speed, agility, and reliability—always ready for the next stretch of road.
-      </p>
-    </div>
-
-    <!-- BIKE 2 -->
-    <div class="bike-card">
-      <div class="bike-image">
-        <img src="images/him.jpg.webp" alt="Sherpa">
-      </div>
-      <h2>THE SHERPA</h2>
-      <h3>Royal Enfield Himalayan 450</h3>
-      <p>
-        Sherpa is my companion for riding in India, built for both the chaos of city streets and the calm of the Himalayas. 
-        The moment I took it out of the hustle and into the mountains, it truly showed its character. 
-        Smooth, stable, and dependable, it handled the world’s highest terrain with ease. 
-        This is the bike I trust when the journey gets challenging and the roads turn unpredictable.
-      </p>
-    </div>
-
-  </div>
-</section>
+                <!-- Bike 2 -->
+                <div class="bike-card">
+                    <div class="bike-image">
+                        <img src="images/him.jpg.webp" alt="Sherpa">
+                    </div>
+                    <h2>The Sherpa</h2>
+                    <h3>Royal Enfield Himalayan 450</h3>
+                    <p>
+                        Sherpa is my companion for riding in India,
+                        built for both city chaos and Himalayan adventures.
+                        Stable, dependable, and comfortable,
+                        it feels at home on difficult terrain.
+                    </p>
+                </div>
+            </div>
+          </div>
+      </section>
 
       <!-- Footer -->
         <footer id="footer">
@@ -104,6 +110,5 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-</script>
 </body>
 </html>
