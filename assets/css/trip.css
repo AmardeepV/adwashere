@@ -1,0 +1,80 @@
+/* =========================
+   TRIPS PAGE
+========================= */
+
+/* Page spacing */
+#main .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Trip cards container */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Individual trip card */
+.trip-card {
+    background: #2e3450;
+    border-radius: 14px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Hover effect */
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Title */
+.trip-card h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+/* Date */
+.trip-date {
+    color: #8ea9ff;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Text */
+.trip-card p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* Highlights list */
+.trip-card ul {
+    margin-bottom: 25px;
+}
+
+.trip-card ul li {
+    margin-bottom: 8px;
+}
+
+/* Button */
+.trip-card .button {
+    width: 100%;
+    text-align: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-card {
+        padding: 24px;
+    }
+
+}
